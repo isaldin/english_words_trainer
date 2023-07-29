@@ -1,0 +1,43 @@
+.letter {
+    display: block;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.letter.withCursor {
+    cursor: pointer;
+}
+
+.letter.green {
+    background-color: darkgreen;
+}
+
+.letter.blue {
+    background-color: cornflowerblue;
+}
+
+.letter.error {
+    background-color: indianred;
+}
+
+#answer, #letters {
+    gap: 16px
+}
+
+#game_statistic {
+    display: none;
+}
+
+.statistic_row {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>English Vocabulary Trainer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="container py-5">
+    <div class="d-flex flex-column align-items-center w-100 text-center mx-auto">
+        <div id="game_statistic">
+            <h2 class="mb-5">Game statistic</h2>
+            <div class="d-flex flex-column">
+                <div class="statistic_row">
+                    <b>Passed:</b>
+                    <span id="passed_words"></span>
+                </div>
+                <div class="statistic_row">
+                    <b>Total errors:</b>
+                    <span id="total_errors"></span>
+                </div>
+                <div class="statistic_row">
+                    <b>Most failed word:</b>
+                    <span id="most_failed_word"></span>
+                </div>
+                <button id="close_statistic_btn" type="button" class="btn btn-primary align-self-end mt-4">Ok</button>
+            </div>
+        </div>
+        <div id="game_area">
+            <h2 class="mb-5">English Vocabulary Trainer</h2>
+
+            <p class="lead mb-1">Form a valid English word using the given letters</p>
+            <p class="mb-5">Question <span id="current_question">1</span> of <span id="total_questions">10</span></p>
+
+            <div class="d-flex flex-column w-100">
+                <div id="answer" class="d-flex align-items-center justify-content-center bg-light mx-1 mb-3" style="height: 46px; border-radius: 6px"></div>
+                <div id="letters" class="d-flex justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
