@@ -4,14 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "build:prod": "(rm -rf dist || true) && webpack --optimization-minimize --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-typescript": "^7.22.5",
     "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.3",
     "prettier": "^3.0.0",
     "ts-node": "^10.9.1",
